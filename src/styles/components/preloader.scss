@@ -1,0 +1,70 @@
+.preloader {
+  @extend %cover;
+  background-color: $color-black;
+  z-index: z("preloader");
+  user-select: none;
+  display: none;
+}
+
+.preloader__wrapper {
+  @extend %cover;
+  @extend %dimension;
+  overflow: hidden;
+}
+
+.preloader__text__type {
+  position: fixed;
+  height: 100vmax;
+  width: 100vmax;
+  text-transform: uppercase;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  top: 50%;
+  margin-top: -50vmax;
+  will-change: transform;
+}
+
+.preloader__text__type__line {
+  --type-line-opacity: 0.05;
+  white-space: nowrap;
+  font-size: 12.5rem;
+  font-size: clamp(7rem, 19.75vh, 15rem);
+  line-height: 0.77;
+  font-weight: bold;
+  font-family: quiche-sans;
+  color: rgb(192, 192, 192, 0.8);
+  opacity: var(--type-line-opacity);
+}
+
+.preloader__content {
+  max-width: 69rem;
+  @extend %center-pos-abs;
+  text-transform: uppercase;
+}
+
+.preloader__text__quote {
+  font-size: 6rem;
+  text-align: center;
+  color: #c0c0c0;
+}
+
+.preloader__number {
+  position: absolute;
+  bottom: 10rem;
+  left: 10rem;
+}
+
+.preloader__number__text {
+  @extend %title-70;
+  color: #c0c0c0;
+}
+
+// .highlight-alpha {
+//   color: greenyellow;
+// }
+
+// .highlight-ship {
+//   color: magenta;
+// }

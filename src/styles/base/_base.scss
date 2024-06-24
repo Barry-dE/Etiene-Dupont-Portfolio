@@ -1,0 +1,87 @@
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: initial;
+  overscroll-behavior: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  font-size: Min(calc(100vh / 900 * 10), calc(100vw / 1440 * 10));
+  line-height: 1;
+
+  @include respondMax("tablet") {
+    font-size: Min(calc(100vw / 992 * 10), calc(100vh / 750 * 10));
+  }
+
+  @include respondMax("mobile2x") {
+    font-size: calc(100vw / 675 * 10);
+  }
+}
+
+body {
+  font-family: "Opensauce", sans-serif;
+  background-color: $color-black;
+  color: $color-white;
+  transition: all 300ms $ease-in-out;
+  font-size: 1.8rem;
+}
+
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+canvas {
+  @extend %cover;
+  pointer-events: none;
+  position: fixed;
+  z-index: z("canvas");
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+[data-animation="label"],
+[data-animation="paragraphs"],
+[data-animation="title"] {
+  span {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+  }
+}
+
+/* Custom scrollbar styles for Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 6px; /* Width of vertical scrollbar */
+  height: 6px; /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; /* Color of the scrollbar thumb on hover */
+}
+
+.content {
+  @extend %cover;
+  overflow-x: hidden;
+  z-index: z("content");
+}

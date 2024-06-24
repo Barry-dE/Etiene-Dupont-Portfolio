@@ -1,0 +1,83 @@
+@mixin flex($justify: flex-start, $align: flex-start, $flow: row wrap) {
+  flex-flow: $flow;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+$breakpoints: (
+  "mobile": 375px,
+  "mobile2x": 480px,
+  "mobile3x": 600px,
+  "tablet": 768px,
+  "tablet2x": 992px,
+  "desktop": 1200px,
+  "desktop2x": 1440px,
+) !default;
+
+@mixin respondMin($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+%cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+%center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+%flex-ac {
+  display: flex;
+  align-items: center;
+}
+
+%flex-ac-jb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+%show {
+  visibility: visible;
+  opacity: 1;
+}
+
+%center-pos-abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%dimension {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin respondMax($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}

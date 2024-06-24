@@ -1,0 +1,61 @@
+.home {
+  @extend %dimension;
+}
+
+.home__wrapper {
+}
+
+.home__media {
+  @extend %dimension;
+}
+
+.home__media__image {
+  @extend %cover;
+  object-fit: cover;
+  filter: brightness(20%);
+}
+
+.home__text {
+  @extend %cover;
+}
+
+.home__text__description {
+  @extend %description-18;
+  max-width: 50rem;
+  position: absolute;
+  top: 40%;
+  left: 15rem;
+  line-height: 1.2;
+}
+
+.home__text__title__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.home__text__title__wrapper {
+  @extend %center;
+  gap: 4rem;
+
+  svg {
+    width: 20rem;
+    animation: rotate 20s linear infinite;
+  }
+}
+
+.home__text__title {
+  @extend %title-400;
+  text-wrap: nowrap;
+  font-family: "PP Neubit";
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateY(3rem) rotate(0deg);
+  }
+  100% {
+    transform: translateY(3rem) rotate(360deg);
+  }
+}

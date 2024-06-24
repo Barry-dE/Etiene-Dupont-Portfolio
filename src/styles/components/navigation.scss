@@ -1,0 +1,56 @@
+.navigation {
+  @extend %cover;
+  position: fixed;
+  z-index: z("navigation");
+  height: 8rem;
+  width: 100%;
+  mix-blend-mode: difference;
+}
+
+.navigation__wrapper {
+  @extend %dimension;
+  padding: 2rem 4rem;
+  @extend %flex-ac-jb;
+}
+
+.naviagtion__logo {
+  max-width: 13rem;
+  font-family: "PP Neubit";
+  font-size: 4.5rem;
+}
+
+.navigation__logo__text {
+}
+
+.navigation__marquee {
+  width: 25rem;
+  border: 2px solid $color-white;
+  padding: 1rem 2rem;
+  border-radius: 100rem;
+}
+
+.navigation__marquee__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  //   mix-blend-mode: difference;
+}
+
+.navigation__marquee__svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100rem;
+  background-color: $color-white;
+  //   mix-blend-mode: difference;
+}
+
+.navigation__marquee__text {
+}
+
+.navigation__gallery {
+}
+
+.navigation__gallery__link {
+  @extend %link--hidden;
+}
