@@ -1,0 +1,77 @@
+.footer {
+  @extend %dimension;
+}
+
+.footer__wrapper {
+  @extend %dimension;
+  position: relative;
+}
+
+.footer__links {
+  position: absolute;
+  width: 80rem;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 64%;
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.footer__link {
+  font-size: 2.5rem;
+}
+
+.footer__link__item {
+  @extend %link--hidden;
+}
+
+.footer__policy {
+  position: absolute;
+  width: 100%;
+  bottom: 28rem;
+  left: 0;
+  @extend %flex-ac-jb;
+  padding: 0 3rem;
+}
+
+.footer__mask {
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer__mask__media {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+}
+
+.footer__mask__media__image {
+  @extend %cover;
+}
+
+.footer__title {
+  @extend %center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer__title__text {
+  font-size: 22rem;
+}
+
+.footer__title__media {
+  height: 17rem;
+  width: 30rem;
+  position: relative;
+}
+
+.footer__title__media__image {
+  @extend %cover;
+  object-fit: cover;
+}
