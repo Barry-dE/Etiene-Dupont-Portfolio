@@ -1,7 +1,9 @@
-import Home from "./views/home";
+import Home from "./views/Home";
 import Preloader from "./components/Preloader";
-import About from "./views/About";
+
 import Navigation from "./components/Navigation";
+import Footer from "./views/Footer";
+import About from "./views/About";
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <main className="content">
         <Home />
         <About />
+        <Footer />
       </main>
     </>
   );

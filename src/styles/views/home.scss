@@ -20,7 +20,7 @@
 }
 
 .home__text__description {
-  @extend %description-18;
+  @extend %description-22;
   max-width: 50rem;
   position: absolute;
   top: 40%;
@@ -48,7 +48,6 @@
 .home__text__title {
   @extend %title-400;
   text-wrap: nowrap;
-  font-family: "PP Neubit";
 }
 
 @keyframes rotate {

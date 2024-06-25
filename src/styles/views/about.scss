@@ -1,5 +1,77 @@
 .about {
-  background-color: #e31818;
-  height: 100vh;
+  min-height: 100%;
   width: 100%;
+}
+
+.about__wrapper {
+  @extend %dimension;
+  padding-top: 60rem;
+  position: relative;
+}
+
+.about__text {
+  max-width: 70rem;
+  margin-bottom: 3rem;
+  position: absolute;
+  top: 48rem;
+  right: 5rem;
+}
+
+.about__text__title {
+  display: inline-block;
+  align-items: center;
+  font-size: 3rem;
+  max-width: 25rem;
+  @extend %title-30;
+}
+
+.about__text__bracket {
+  display: inline-block;
+
+  &--right {
+    margin-right: 0.5rem;
+  }
+
+  &--left {
+    margin-left: 0.5rem;
+  }
+}
+
+.about__gallery {
+  width: 100%;
+  height: 80rem;
+}
+
+.about__gallery__media {
+  @extend %dimension;
+  position: relative;
+}
+
+.about__gallery__media__image {
+  @extend %cover;
+  object-fit: cover;
+}
+
+.about__personal__story {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30rem;
+  padding-right: 20rem;
+  padding-top: 14rem;
+}
+
+.about__personal__story__title {
+  text-transform: uppercase;
+}
+
+.about__personal__story__description {
+  max-width: 50rem;
+  min-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @extend %description-22;
+  margin-bottom: 40rem;
+  line-height: 1.2;
 }

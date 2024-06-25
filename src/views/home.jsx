@@ -6,7 +6,7 @@ export default function Home() {
   ];
 
   const title = {
-    title: "Étienne Dupont — Photographer",
+    title: "Étienne — Photographer",
   };
 
   return (
