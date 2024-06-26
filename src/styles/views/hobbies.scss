@@ -1,0 +1,106 @@
+.hobbies {
+  height: 140rem;
+  width: 100%;
+}
+
+.hoobies__wrapper {
+  @extend %dimension;
+  border: 1px solid green;
+  position: relative;
+}
+
+.hobbies__pane {
+  position: relative;
+  &--large {
+    width: var(--pane--default--width--large);
+    height: var(--pane--default--height--large);
+    border-radius: var(--pane--border--radius);
+    background-color: #808000;
+  }
+
+  &--1 {
+    position: absolute;
+    left: 40rem;
+    top: 30rem;
+  }
+
+  &--2 {
+    position: absolute;
+    left: 60rem;
+    top: 40rem;
+  }
+
+  &--3 {
+    position: absolute;
+    right: 40rem;
+    top: 30rem;
+  }
+
+  &--4 {
+    position: absolute;
+    right: 70rem;
+    top: 20rem;
+  }
+}
+
+.hobbies__pane__circles {
+  height: 6rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-left: 2rem;
+  background-color: #fff;
+  border-radius: var(--pane--border--radius);
+
+  :nth-child(1) {
+    background-color: #ff7f6a;
+  }
+  :nth-child(2) {
+    background-color: #006d6d;
+  }
+
+  span {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    border-radius: 100rem;
+  }
+}
+
+.hobbies__media__wrapper {
+  @extend %dimension;
+  padding: 2rem;
+}
+
+.hobbies__media {
+  background-color: #fff;
+  height: 35rem;
+  position: relative;
+}
+
+.hobbies_media__image {
+  @extend %cover;
+  object-fit: cover;
+  -webkit-user-drag: none;
+}
+
+.corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid #98d1d1;
+  cursor: nesw-resize;
+}
+// Vintage Teal: #006d6d
+// Muted Mustard: #f5c04e
+// Secondary Colors:
+
+// Warm Cream: #f7e4c3
+// Soft Coral: #ff7f6a
+// Accent Colors:
+
+// Retro Red: #d74a4a
+// Olive Green: #808000
+// Neutral Colors:
