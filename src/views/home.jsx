@@ -1,14 +1,14 @@
 import bgImage from "/hero-image-use.jpg";
 
+const description = [
+  "Bienvenue! Welcome to the artistic realm of Étienne Dupont, where every click of the shutter tells a unique story. Dive into my portfolio, and uncover my creative journey. Let’s create timeless memories together.",
+];
+
+const title = {
+  title: "Étienne — Photographer",
+};
+
 export default function Home() {
-  const description = [
-    "Bienvenue! Welcome to the artistic realm of Étienne Dupont, where every click of the shutter tells a unique story. Dive into my portfolio, and uncover my creative journey. Let’s create timeless memories together.",
-  ];
-
-  const title = {
-    title: "Étienne — Photographer",
-  };
-
   return (
     <section className="home">
       <div className="home__wrapper">
