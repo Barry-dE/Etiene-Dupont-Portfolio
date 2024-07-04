@@ -1,63 +1,45 @@
 .hobbies {
-  height: 140rem;
+  min-height: 120rem;
   width: 100%;
 }
 
-.hoobies__wrapper {
+.hobbies__wrapper {
+  position: relative;
   @extend %dimension;
-  border: 1px solid green;
+}
+
+.hobbies__content {
+  @extend %dimension;
+  display: flex;
   position: relative;
 }
 
-.hobbies__pane {
+.hobbies__draggable__card {
+  width: 55rem;
+  height: 46rem;
   position: relative;
-  &--large {
-    width: var(--pane--default--width--large);
-    height: var(--pane--default--height--large);
-    border-radius: var(--pane--border--radius);
-    background-color: #808000;
-  }
-
-  &--1 {
-    position: absolute;
-    left: 40rem;
-    top: 30rem;
-  }
-
-  &--2 {
-    position: absolute;
-    left: 60rem;
-    top: 40rem;
-  }
-
-  &--3 {
-    position: absolute;
-    right: 40rem;
-    top: 30rem;
-  }
-
-  &--4 {
-    position: absolute;
-    right: 70rem;
-    top: 20rem;
-  }
+  background-color: #fff;
+  margin-top: 6rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
-.hobbies__pane__circles {
-  height: 6rem;
+.hobbies__draggable__card__frame__numbers {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  @extend %description-50;
+  color: $color-black;
+  background-color: $color-white;
+}
+
+.hobbies__draggable__card__frame__header {
+  height: 5rem;
   display: flex;
   gap: 1rem;
   align-items: center;
   padding-left: 2rem;
-  background-color: #fff;
-  border-radius: var(--pane--border--radius);
-
-  :nth-child(1) {
-    background-color: #ff7f6a;
-  }
-  :nth-child(2) {
-    background-color: #006d6d;
-  }
+  background-color: #ffffff;
 
   span {
     width: 2rem;
@@ -65,42 +47,47 @@
     display: inline-block;
     border-radius: 100rem;
   }
+
+  :nth-child(1) {
+    background-color: #cbccff;
+  }
+  :nth-child(2) {
+    background-color: #9296f0;
+  }
 }
 
-.hobbies__media__wrapper {
-  @extend %dimension;
-  padding: 2rem;
-}
-
-.hobbies__media {
-  background-color: #fff;
-  height: 35rem;
+.hobbies__draggable__card__frame__media {
+  height: 29rem;
+  width: 95%;
   position: relative;
+  margin: 0 auto;
 }
 
-.hobbies_media__image {
+.hobbies__draggable__card__frame__media__image {
   @extend %cover;
   object-fit: cover;
   -webkit-user-drag: none;
 }
 
-.corner {
+.hobbies__draggable__card__frame__text {
+  max-width: 70rem;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 2.4rem;
-  height: 2.4rem;
-  border: 1px solid #98d1d1;
-  cursor: nesw-resize;
+  top: 30rem;
+  right: 17rem;
 }
-// Vintage Teal: #006d6d
-// Muted Mustard: #f5c04e
-// Secondary Colors:
 
-// Warm Cream: #f7e4c3
-// Soft Coral: #ff7f6a
-// Accent Colors:
+.hobbies__draggable__card__frame__text__text {
+  @extend %description-22;
+}
 
-// Retro Red: #d74a4a
-// Olive Green: #808000
-// Neutral Colors:
+.first-card {
+  position: absolute;
+  left: 45rem;
+  top: 10rem;
+}
+
+.second-card {
+  position: absolute;
+  left: 30rem;
+  top: 25rem;
+}

@@ -28,14 +28,8 @@
 
 .preloader__text__type__line {
   --type-line-opacity: 0.05;
-  white-space: nowrap;
-  font-size: 12.5rem;
-  font-size: clamp(7rem, 19.75vh, 15rem);
-  line-height: 0.77;
-  font-weight: bold;
-  font-family: quiche-sans;
-  color: rgb(192, 192, 192, 0.8);
   opacity: var(--type-line-opacity);
+  @extend %description-125;
 }
 
 .preloader__content {
@@ -45,9 +39,10 @@
 }
 
 .preloader__text__quote {
-  font-size: 6rem;
+  @extend %title-70;
   text-align: center;
   color: #c0c0c0;
+  line-height: 0.8;
 }
 
 .preloader__number {
@@ -60,11 +55,3 @@
   @extend %title-70;
   color: #c0c0c0;
 }
-
-// .highlight-alpha {
-//   color: greenyellow;
-// }
-
-// .highlight-ship {
-//   color: magenta;
-// }

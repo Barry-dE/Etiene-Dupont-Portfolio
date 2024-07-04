@@ -1,242 +1,50 @@
-Absolutely! Awwwards websites are known for their creativity, interactivity, and engaging content. I'll adjust the content to fit a more dynamic and visually striking design. Here’s the revised copy for a creative, interactive website for Étienne Dupont Photography:
-
----
-
-### **Homepage**
-
-**Hero Section:**
-**Title:** Étienne Dupont Photography
-**Subtitle:** Capturing Moments, Crafting Memories
-**Intro Text:** 
-Bienvenue! Welcome to the artistic realm of Étienne Dupont, where every click of the shutter tells a unique story. Dive into my portfolio, uncover my creative journey, and explore the bespoke photography services I offer. Let’s create timeless memories together.
-
-**Call to Action Button:** Dive Into My World
-
----
-
-### **About**
-
-**Title:** Meet Étienne
-
-**Section 1: Introduction**
-**Bonjour!** I’m Étienne Dupont, a Parisian photographer with a deep passion for capturing life's fleeting moments. With over ten years of experience, I specialize in portrait, landscape, and event photography, blending traditional techniques with contemporary flair.
-
-**Section 2: My Artistic Journey**
-From wandering the picturesque streets of Paris with my grandfather’s vintage camera to honing my craft at the École des Beaux-Arts, my journey has been a tapestry of experiences and inspirations. Collaborating with renowned artists across Europe has shaped my unique style, characterized by meticulous attention to detail and a narrative-driven approach.
-
-**Section 3: My Creative Philosophy**
-I believe in the transformative power of photography. Each image I create is a carefully crafted piece of art, designed to evoke emotion and capture the essence of the moment. My goal is to tell compelling stories through my lens, whether it’s a candid smile or a majestic landscape.
-
-**Call to Action Button:** Discover My Story
-
----
-
-### **Portfolio**
-
-**Title:** My Work
-
-**Intro Text:**
-Step into my visual gallery, where each photograph is a window into a different world. From intimate portraits to breathtaking landscapes, my portfolio is a testament to my dedication to the art of photography.
-
-**Sub-sections:**
-
-1. **Portraits**
-   Delve into the soul of my subjects with portraits that reveal their true essence.
-
-2. **Landscapes**
-   Experience the beauty of diverse environments through my evocative landscape photography.
-
-3. **Events**
-   Relive special moments with my dynamic and immersive event photography.
-
-4. **Commercial**
-   Explore my commercial work, where creativity meets professionalism to deliver stunning results.
-
-**Call to Action Button:** Explore the Gallery
-
----
-
-### **Services**
-
-**Title:** What I Offer
-
-**Intro Text:**
-Whether it’s capturing the magic of a personal moment or creating striking visuals for your business, I offer a range of photography services tailored to your needs. Each project is approached with creativity, precision, and a commitment to excellence.
-
-**Sub-sections:**
-
-1. **Portrait Photography**
-   - Personal and family portraits
-   - Professional headshots
-   - Engagement and wedding photos
-
-2. **Event Photography**
-   - Weddings and engagements
-   - Corporate events and conferences
-   - Private parties and celebrations
-
-3. **Commercial Photography**
-   - Product photography
-   - Real estate imagery
-   - Advertising and marketing campaigns
-
-4. **Bespoke Projects**
-   - Custom photography tailored to your unique vision
-   - Collaborative planning to ensure perfect execution
-
-**Call to Action Button:** Book a Session
-
----
-
-### **Contact**
-
-**Title:** Let's Connect
-
-**Intro Text:**
-I’d love to hear from you! Whether you’re looking to book a session, inquire about services, or simply say hello, feel free to get in touch.
-
-**Contact Form:**
-
-- **Name**
-- **Email**
-- **Phone Number**
-- **Message**
-
-**Contact Details:**
-- **Email:** etienne.dupont@photography.com
-- **Phone:** +33 1 23 45 67 89
-- **Location:** Paris, France
-
-**Call to Action Button:** Send a Message
-
-**Social Media Links:**
-Stay connected and follow my journey on social media.
-- Instagram
-- Facebook
-- Twitter
-
----
-
-### **Footer**
-
-**Text:**
-© 2024 Étienne Dupont Photography. All Rights Reserved. | Privacy Policy | Terms of Service
-
----
-
-### **Additional Interactive Elements for a Creative Touch**
-
-**Homepage:**
-
-- **Parallax Scrolling:** Use parallax scrolling effects on the hero image and portfolio preview sections to create depth.
-- **Interactive Gallery:** Create a hover effect on portfolio images that reveals more details about each project.
-- **Animated Call to Actions:** Add subtle animations to the call-to-action buttons to draw attention.
-
-**About Page:**
-
-- **Timeline of Journey:** An interactive timeline highlighting key milestones in Étienne's career.
-- **Hover Effects on Photos:** Add hover effects on personal photos that reveal short anecdotes or facts.
-
-**Portfolio Page:**
-
-- **Filterable Gallery:** Allow users to filter the portfolio by categories (Portraits, Landscapes, Events, Commercial).
-- **Fullscreen Image View:** Enable fullscreen viewing with swipe navigation for a more immersive experience.
-
-**Services Page:**
-
-- **Interactive Icons:** Use animated icons to represent different services.
-- **Service Highlight on Hover:** When hovering over a service, display a brief description and example images.
-
-**Contact Page:**
-
-- **Interactive Map:** Embed an interactive map showing Étienne’s location in Paris.
-- **Animated Form Elements:** Subtle animations on form fields to enhance the user experience
-
-Color System
-Primary Colors:
-
-Vintage Teal: #006d6d
-Muted Mustard: #f5c04e
-Secondary Colors:
-
-Warm Cream: #f7e4c3
-Soft Coral: #ff7f6a
-Accent Colors:
-
-Retro Red: #d74a4a
-Olive Green: #808000
-Neutral Colors:
-
-Charcoal: #2c2c2c
-Off-White: #f5f5f5
-Typography System
-Primary Font:
-
-Retro Serif: Playfair Display (for headings and titles)
-Secondary Font:
-
-Sans-Serif: Roboto (for body text, descriptions, and labels)
-Text Sizes and Hierarchy
-Headings:
-
-H1:
-
-Font: Playfair Display
-Size: 48px
-Weight: Bold
-Line Height: 1.2
-Color: Vintage Teal (#006d6d)
-H2:
-
-Font: Playfair Display
-Size: 36px
-Weight: Bold
-Line Height: 1.3
-Color: Muted Mustard (#f5c04e)
-H3:
-
-Font: Playfair Display
-Size: 30px
-Weight: Semi-Bold
-Line Height: 1.4
-Color: Retro Red (#d74a4a)
-H4:
-
-Font: Playfair Display
-Size: 24px
-Weight: Semi-Bold
-Line Height: 1.5
-Color: Olive Green (#808000)
-Body Text:
-
-Paragraph (P):
-
-Font: Roboto
-Size: 18px
-Weight: Regular
-Line Height: 1.6
-Color: Charcoal (#2c2c2c)
-Small Text:
-
-Font: Roboto
-Size: 14px
-Weight: Regular
-Line Height: 1.5
-Color: Charcoal (#2c2c2c)
-Labels and Buttons:
-
-Label Text:
-
-Font: Roboto
-Size: 12px
-Weight: Bold
-Line Height: 1.4
-Color: Warm Cream (#f7e4c3)
-Button Text:
-
-Font: Roboto
-Size: 16px
-Weight: Bold
-Line Height: 1.5
-Color: Off-White (#f5f5f5)
-Background Color: Retro Red (#d74a4a) or Vintage Teal (#006d6d)
+Awards & Recognitions
+
+World Press Photo Award
+2017: Winner in the Contemporary Issues category for the series "Faces of Change"
+2019: Honorable Mention in the Portraits category for "The Silent Witness"
+2022: Winner in the Environment category for "Echoes of a Warming World"
+Sony World Photography Awards
+2016: Photographer of the Year for "Timeless Moments"
+2018: Winner in the Landscape category for "Whispers of Nature"
+2021: Finalist in the Creative category for "Surreal Dreams"
+Hasselblad Masters Award
+2015: Winner in the Fashion/Beauty category
+2017: Finalist in the Art category
+2020: Winner in the Portrait category
+International Photography Awards (IPA)
+2016: 1st Place in Fine Art Photography for "Abstract Realities"
+2018: Honorable Mention in Documentary Photography for "The Forgotten Faces"
+2021: 1st Place in Nature/Trees for "The Living Forest"
+Prix de la Photographie Paris (PX3)
+2017: Gold Award in the Press/Travel category for "Journeys of the Heart"
+2019: Silver Award in Fine Art/Abstract for "Mystic Patterns"
+2022: Gold Award in Portraiture for "Eyes of Innocence"
+Leica Oskar Barnack Award
+2015: Winner for the series "Life in Motion"
+2018: Finalist for "Urban Rhythms"
+2020: Winner for "Eternal Stories"
+LensCulture Exposure Awards
+2016: Juror’s Pick for "Fragments of Time"
+2019: 1st Place in Street Photography for "City Tales"
+2021: Finalist in Fine Art for "Dreamscapes"
+National Geographic Photo Contest
+2017: Winner in the People category for "Voices Unheard"
+2020: Honorable Mention in the Nature category for "Wild Spirits"
+2022: Winner in the Wildlife category for "Silent Predators"
+Taylor Wessing Photographic Portrait Prize
+2015: 1st Prize for "The Soul’s Window"
+2017: Shortlisted for "Generations"
+2021: Winner for "Silent Stories"
+Pulitzer Prize for Photography
+2016: Winner for "The Human Condition"
+2018: Finalist for "In the Face of Adversity"
+2021: Winner for "Life in Conflict"
+Magnum Photography Awards
+2016: Winner in the Photojournalism category for "Unseen Worlds"
+2019: Honorable Mention in Documentary for "Echoes of the Past"
+2022: Winner in Fine Art for "Impressions of Reality"
+British Photography Awards
+2017: Photographer of the Year for "Cultural Reflections"
+2020: Winner in Street Photography for "Urban Pulse"
+2022: Winner in Fine Art for "Visionary Landscapes"

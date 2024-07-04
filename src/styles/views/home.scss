@@ -1,8 +1,10 @@
 .home {
   @extend %dimension;
+  overflow: hidden;
 }
 
 .home__wrapper {
+  overflow: hidden;
 }
 
 .home__media {
@@ -38,6 +40,8 @@
 .home__text__title__wrapper {
   @extend %center;
   gap: 4rem;
+  position: relative;
+  white-space: nowrap;
 
   svg {
     width: 20rem;
@@ -47,7 +51,7 @@
 
 .home__text__title {
   @extend %title-400;
-  text-wrap: nowrap;
+  position: relative;
 }
 
 @keyframes rotate {

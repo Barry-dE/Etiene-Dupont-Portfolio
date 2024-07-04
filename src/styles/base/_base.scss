@@ -15,7 +15,6 @@ html {
   overscroll-behavior: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-
   font-size: Min(calc(100vh / 900 * 10), calc(100vw / 1440 * 10));
   line-height: 1;
 
@@ -34,6 +33,7 @@ body {
   color: $color-white;
   transition: all 300ms $ease-in-out;
   font-size: 1.8rem;
+  user-select: none;
 }
 
 a {
@@ -67,24 +67,23 @@ button {
   }
 }
 
-/* Custom scrollbar styles for Webkit browsers (Chrome, Safari, Edge) */
+// /* Custom scrollbar styles for Webkit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
-  width: 6px; /* Width of vertical scrollbar */
-  height: 6px; /* Height of horizontal scrollbar */
+  display: none;
 }
 
-::-webkit-scrollbar-track {
-  background: transparent; /* Background of the scrollbar track */
-}
+// ::-webkit-scrollbar-track {
+//   background: transparent; /* Background of the scrollbar track */
+// }
 
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
-  border-radius: 10px; /* Rounded corners of the scrollbar thumb */
-}
+// ::-webkit-scrollbar-thumb {
+//   background: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+//   border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+// }
 
-::-webkit-scrollbar-thumb:hover {
-  background: transparent; /* Color of the scrollbar thumb on hover */
-}
+// ::-webkit-scrollbar-thumb:hover {
+//   background: transparent; /* Color of the scrollbar thumb on hover */
+// }
 
 .content {
   @extend %cover;

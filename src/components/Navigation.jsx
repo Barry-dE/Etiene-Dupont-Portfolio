@@ -1,4 +1,26 @@
+import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import gsap from "gsap";
+
 function Navigation() {
+  const dotRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      dotRef.current,
+      {
+        autoAlpha: 0,
+      },
+      {
+        autoAlpha: 1,
+        ease: "power1.inOut",
+        repeat: -1,
+        yoyo: true,
+        duration: 0.5,
+      }
+    );
+  }, []);
+
   return (
     <nav className="navigation">
       <div className="navigation__wrapper">
@@ -9,14 +31,14 @@ function Navigation() {
         </div>
         <div className="navigation__marquee">
           <div className="navigation__marquee__content">
-            <span className="navigation__marquee__svg"></span>
+            <span ref={dotRef} className="navigation__marquee__svg"></span>
             <div className="navigation__marquee__text">Available for work</div>
           </div>
         </div>
         <div className="navigation__gallery">
-          <a href="#" className="navigation__gallery__link">
-            Gallery
-          </a>
+          <Link className="navigation__gallery__link" to={"/works"}>
+            Works
+          </Link>
         </div>
       </div>
     </nav>

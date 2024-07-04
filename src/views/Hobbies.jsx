@@ -1,57 +1,60 @@
-const hobbiesText =
-  "His keen eyes for details extends to digital art.I also have a flair for writing, often penning thought-provoking articles and blogs that inspire and engage. His diverse skill set and artistic vision make him a true creative force, dedicated  to exploring and expressing the beauty in every medium";
+import Drag from "../js/animations/drag";
+
+import { useEffect } from "react";
 
 function Hobbies() {
+  useEffect(() => {
+    const pane = document.querySelectorAll(".hobbies__draggable__card");
+    new Drag(pane);
+  });
+
+  const data = {
+    numbers: ["01", "02"],
+    media: [
+      { src: "/noise.gif", alt: "An image taken by Etiene" },
+      {
+        src: "/jakob-owens-pFU8tWNKtIs-unsplash.jpg",
+        alt: "An image of a landscape",
+      },
+    ],
+    text: "It's about more than just taking pictures—it's about seeing the world in unique ways, capturing moments that tell a story, and finding beauty in unexpected places. My approach involves playing with light and composition to bring out the emotions and essence of each scene. Through my lens, I strive to create images that not only capture a moment but also inspire and evoke feelings in those who view them. This creative process allows me to turn everyday scenes into compelling visual narratives, showcasing the world from a fresh and imaginative perspective.",
+  };
+
   return (
     <section className="hobbies">
-      <div className="hoobies__wrapper">
-        <div className="hobbies__pane hobbies__pane--large hobbies__pane--1">
-          <div className="hobbies__pane__circles">
-            <span></span>
-            <span></span>
+      <div className="hobbies__wrapper">
+        <div className="hobbies__content">
+          {data.media.map((mediaItem, index) => (
+            <div
+              className={`hobbies__draggable__card  ${
+                index === 0 ? "first-card" : index === 1 ? "second-card" : ""
+              }`}
+              key={index}
+              data-animation="drag"
+            >
+              <div className="hobbies___draggable__card__frame">
+                <div className="hobbies__draggable__card__frame__header">
+                  <span></span>
+                  <span></span>
+                </div>
+                <figure className="hobbies__draggable__card__frame__media">
+                  <img
+                    src={mediaItem.src}
+                    alt={mediaItem.alt}
+                    className="hobbies__draggable__card__frame__media__image"
+                  />
+                </figure>
+                <div className="hobbies__draggable__card__frame__numbers">
+                  <p>{data.numbers[index]}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+          <div className="hobbies__draggable__card__frame__text">
+            <p className="hobbies__draggable__card__frame__text__text">
+              {data.text}
+            </p>
           </div>
-          <div className="hobbies__media__wrapper">
-            <figure className="hobbies__media">
-              <img src="" alt="" className="hobbies_media__image" />
-            </figure>
-          </div>
-          <div className="corner"></div>
-        </div>
-        <div className="hobbies__pane hobbies__pane--large hobbies__pane--2">
-          <div className="hobbies__pane__circles">
-            <span></span>
-            <span></span>
-          </div>
-          <div className="hobbies__media__wrapper">
-            <figure className="hobbies__media">
-              <img src="" alt="" className="hobbies_media__image" />
-            </figure>
-          </div>
-          <div className="corner"></div>
-        </div>
-        <div className="hobbies__pane hobbies__pane--large  hobbies__pane--3">
-          <div className="hobbies__pane__circles">
-            <span></span>
-            <span></span>
-          </div>
-          <div className="hobbies__media__wrapper">
-            <figure className="hobbies__media">
-              <img src="" alt="" className="hobbies_media__image" />
-            </figure>
-          </div>
-          <div className="corner"></div>
-        </div>
-        <div className="hobbies__pane hobbies__pane--large  hobbies__pane--4">
-          <div className="hobbies__pane__circles">
-            <span></span>
-            <span></span>
-          </div>
-          <div className="hobbies__media__wrapper">
-            <figure className="hobbies__media">
-              <img src="" alt="" className="hobbies_media__image" />
-            </figure>
-          </div>
-          <div className="corner"></div>
         </div>
       </div>
     </section>

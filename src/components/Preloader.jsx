@@ -23,7 +23,7 @@ export default function Preloader() {
   };
 
   const quote = {
-    text: "The Shippooooor.",
+    text: "Photographer. Creative.",
   };
 
   return (
