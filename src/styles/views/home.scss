@@ -1,64 +1,97 @@
 .home {
   @extend %dimension;
   overflow: hidden;
+  position: relative;
 }
 
 .home__wrapper {
   overflow: hidden;
 }
 
-.home__media {
-  @extend %dimension;
+.home__card {
+  @extend %cover;
+  color: $color-white;
 }
 
-.home__media__image {
-  @extend %cover;
-  object-fit: cover;
-  filter: brightness(20%);
+.home__card__draggable {
+  position: absolute;
+  width: max-content;
+  padding: 2rem 4rem;
+  border-radius: 10rem;
+  font-size: 3rem;
+
+  &:nth-child(1) {
+    background-color: rgb(55, 128, 115);
+    left: 2rem;
+    top: 15rem;
+  }
+
+  &:nth-child(2) {
+    background-color: rgb(151, 151, 54);
+    left: 70rem;
+    top: 20rem;
+  }
+
+  &:nth-child(3) {
+    background-color: rgb(28, 75, 109);
+    right: 6rem;
+    top: 15rem;
+  }
+
+  &:nth-child(4) {
+    background-color: rgb(107, 48, 125);
+    right: 36rem;
+    top: 40rem;
+  }
+
+  &:nth-child(5) {
+    background-color: rgb(107, 41, 94);
+    right: 35rem;
+    bottom: 1rem;
+  }
+
+  &:nth-child(6) {
+    background-color: rgb(130, 51, 66);
+    left: 2rem;
+    bottom: 3rem;
+  }
 }
 
 .home__text {
   @extend %cover;
 }
+.home__text__wrapper {
+  position: relative;
+  @extend %dimension;
+}
 
-.home__text__description {
-  @extend %description-22;
-  max-width: 50rem;
+.home__text__media {
+  width: 50rem;
+  height: 25rem;
   position: absolute;
-  top: 40%;
-  left: 15rem;
-  line-height: 1.2;
+  bottom: 7rem;
+  left: 30rem;
+}
+
+.home__text__media__image {
+  @extend %cover;
+  object-fit: cover;
 }
 
 .home__text__title__content {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-}
+  width: 100%;
+  height: 55rem;
+  bottom: 7rem;
 
-.home__text__title__wrapper {
-  @extend %center;
-  gap: 4rem;
-  position: relative;
-  white-space: nowrap;
-
-  svg {
-    width: 20rem;
-    animation: rotate 20s linear infinite;
+  & > :nth-child(2) {
+    position: absolute;
+    right: 9rem;
   }
 }
 
 .home__text__title {
-  @extend %title-400;
   position: relative;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translateY(3rem) rotate(0deg);
-  }
-  100% {
-    transform: translateY(3rem) rotate(360deg);
-  }
+  font-size: 28rem;
+  white-space: wrap;
 }

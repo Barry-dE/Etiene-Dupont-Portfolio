@@ -22,6 +22,10 @@
 .navigation__logo__text {
 }
 
+.navigation__link {
+  @extend %link--hidden;
+}
+
 .navigation__marquee {
   width: 25rem;
   border: 2px solid $color-white;
@@ -34,7 +38,6 @@
   align-items: center;
   gap: 1rem;
   justify-content: center;
-  //   mix-blend-mode: difference;
 }
 
 .navigation__marquee__svg {

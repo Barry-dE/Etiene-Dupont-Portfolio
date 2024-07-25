@@ -3,11 +3,11 @@
   width: 100%;
   background-color: $color-white;
   color: $color-black;
+  position: relative;
 }
 
 .about__wrapper {
   @extend %dimension;
-  padding-top: 20rem;
   position: relative;
   background-color: inherit;
 }
@@ -49,7 +49,7 @@
 
 .about__gallery__media {
   @extend %dimension;
-  width: 180rem;
+  width: 100%;
   position: relative;
 }
 
@@ -81,4 +81,3 @@
   @extend %description-22;
   margin-bottom: 40rem;
 }
-

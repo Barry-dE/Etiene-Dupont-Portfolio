@@ -1,8 +1,6 @@
+import aboutImg from "/kim-becker-EoCwQ5PerAs-unsplash.jpg";
 import Hobbies from "./Hobbies";
-import aboutImg from "/john-daniel-sudario-vnktcKBrFdc-unsplash.jpg";
-
 const about = {
-  textTitleInner: "My story",
   personalStoryTitle: " Journey & Creative Philosophy",
   personalStoryDescription: [
     `From wandering the picturesque streets of Paris with my
@@ -24,19 +22,6 @@ function About() {
   return (
     <section className="about">
       <div className="about__wrapper">
-        <div className="about__text">
-          <div className="about__text__title">
-            <span className="about__text__bracket about__text__bracket--right">
-              &#91;
-            </span>
-            <span className="about__text__titles__inner">
-              {about.textTitleInner}
-            </span>
-            <span className="about__text__bracket about__text__bracket--left">
-              &#93;
-            </span>
-          </div>
-        </div>
         <div className="about__gallery">
           <figure className="about__gallery__media">
             <img
@@ -50,15 +35,20 @@ function About() {
 
         <div className="about__personal__story">
           <div className="about__personal__story__title">
-            <p>{about.personalStoryTitle}</p>
+            <p data-animation="title">{about.personalStoryTitle}</p>
           </div>
           <article className="about__personal__story__description">
             {about.personalStoryDescription.map((text, index) => {
-              return <p key={index}>{text}</p>;
+              return (
+                <p data-animation="title" key={index}>
+                  {text}
+                </p>
+              );
             })}
           </article>
         </div>
       </div>
+      <Hobbies />
     </section>
   );
 }

@@ -1,8 +1,6 @@
 import gsap from "gsap";
 
 export default function Lines() {
-  //   const element = document.querySelector(".awards__divider");
-
   gsap.fromTo(
     ".awards__divider",
     {

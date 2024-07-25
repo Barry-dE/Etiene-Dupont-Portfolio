@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+
 import gsap from "gsap";
 
 function Navigation() {
@@ -36,9 +36,13 @@ function Navigation() {
           </div>
         </div>
         <div className="navigation__gallery">
-          <Link className="navigation__gallery__link" to={"/works"}>
+          <a
+            className="navigation__link"
+            href="
+          "
+          >
             Works
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

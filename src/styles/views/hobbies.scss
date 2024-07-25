@@ -1,6 +1,7 @@
 .hobbies {
-  min-height: 120rem;
   width: 100%;
+  height: 190rem;
+  background-color: $color-black;
 }
 
 .hobbies__wrapper {
@@ -8,86 +9,43 @@
   @extend %dimension;
 }
 
-.hobbies__content {
-  @extend %dimension;
-  display: flex;
-  position: relative;
-}
-
-.hobbies__draggable__card {
-  width: 55rem;
-  height: 46rem;
-  position: relative;
-  background-color: #fff;
-  margin-top: 6rem;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-}
-
-.hobbies__draggable__card__frame__numbers {
+.hobbies__text {
   position: absolute;
-  bottom: 1rem;
-  right: 2rem;
-  @extend %description-50;
-  color: $color-black;
-  background-color: $color-white;
-}
-
-.hobbies__draggable__card__frame__header {
-  height: 5rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  padding-left: 2rem;
-  background-color: #ffffff;
+  top: 15rem;
+  left: 5rem;
+  width: 140rem;
+  margin-top: 6rem;
+  color: $color-white;
+  font-size: 23rem;
+  text-transform: uppercase;
+  align-self: center;
 
   span {
-    width: 2rem;
-    height: 2rem;
     display: inline-block;
-    border-radius: 100rem;
-  }
-
-  :nth-child(1) {
-    background-color: #cbccff;
-  }
-  :nth-child(2) {
-    background-color: #9296f0;
   }
 }
 
-.hobbies__draggable__card__frame__media {
-  height: 29rem;
-  width: 95%;
+.hobbies__media {
+  width: 24rem;
+  height: 18rem;
   position: relative;
-  margin: 0 auto;
 }
 
-.hobbies__draggable__card__frame__media__image {
-  @extend %cover;
+.hobbies__media__image {
   object-fit: cover;
-  -webkit-user-drag: none;
+  @extend %cover;
 }
 
-.hobbies__draggable__card__frame__text {
-  max-width: 70rem;
+.hobbies__text__paragraph {
   position: absolute;
-  top: 30rem;
-  right: 17rem;
-}
-
-.hobbies__draggable__card__frame__text__text {
+  bottom: 30rem;
+  right: 13rem;
+  display: flex;
+  gap: 7rem;
+  color: $color-white;
   @extend %description-22;
 }
 
-.first-card {
-  position: absolute;
-  left: 45rem;
-  top: 10rem;
-}
-
-.second-card {
-  position: absolute;
-  left: 30rem;
-  top: 25rem;
+.hobbies__text__paragraph__paragraph {
+  width: 50rem;
 }

@@ -1,60 +1,40 @@
-import Drag from "../js/animations/drag";
-
-import { useEffect } from "react";
+import world from "/world-svgrepo-com.png";
 
 function Hobbies() {
-  useEffect(() => {
-    const pane = document.querySelectorAll(".hobbies__draggable__card");
-    new Drag(pane);
-  });
+  const textParts = ["Seeing the", " w", "", "rld in", "unique ways."];
 
-  const data = {
-    numbers: ["01", "02"],
-    media: [
-      { src: "/noise.gif", alt: "An image taken by Etiene" },
-      {
-        src: "/jakob-owens-pFU8tWNKtIs-unsplash.jpg",
-        alt: "An image of a landscape",
-      },
-    ],
-    text: "It's about more than just taking pictures—it's about seeing the world in unique ways, capturing moments that tell a story, and finding beauty in unexpected places. My approach involves playing with light and composition to bring out the emotions and essence of each scene. Through my lens, I strive to create images that not only capture a moment but also inspire and evoke feelings in those who view them. This creative process allows me to turn everyday scenes into compelling visual narratives, showcasing the world from a fresh and imaginative perspective.",
-  };
+  const paragraphs = [
+    "It's about more than just taking pictures. It's about seeing the world in unique ways, capturing moments that tell a story, and finding beauty in unexpected places. My approach involves playing with light and composition to bring out the emotions and essence of each scene.",
+    "This creative process allows me to turn everyday scenes into compelling visual narratives, showcasing the world from a fresh and imaginative perspective. Through my lens, I strive to create images that not only capture a moment but also inspire and evoke feelings in those who view them.",
+  ];
 
   return (
     <section className="hobbies">
       <div className="hobbies__wrapper">
-        <div className="hobbies__content">
-          {data.media.map((mediaItem, index) => (
-            <div
-              className={`hobbies__draggable__card  ${
-                index === 0 ? "first-card" : index === 1 ? "second-card" : ""
-              }`}
-              key={index}
-              data-animation="drag"
-            >
-              <div className="hobbies___draggable__card__frame">
-                <div className="hobbies__draggable__card__frame__header">
-                  <span></span>
-                  <span></span>
-                </div>
-                <figure className="hobbies__draggable__card__frame__media">
+        <div className="hobbies__text">
+          {textParts.map((part, index) => (
+            <span key={index}>
+              {index === 2 ? (
+                <figure className="hobbies__media">
                   <img
-                    src={mediaItem.src}
-                    alt={mediaItem.alt}
-                    className="hobbies__draggable__card__frame__media__image"
+                    className="hobbies__media__image"
+                    width={300}
+                    src={world}
+                    alt="A picture of the world"
                   />
                 </figure>
-                <div className="hobbies__draggable__card__frame__numbers">
-                  <p>{data.numbers[index]}</p>
-                </div>
-              </div>
-            </div>
+              ) : (
+                part
+              )}
+            </span>
           ))}
-          <div className="hobbies__draggable__card__frame__text">
-            <p className="hobbies__draggable__card__frame__text__text">
-              {data.text}
+        </div>
+        <div className="hobbies__text__paragraph">
+          {paragraphs.map((paragraph, index) => (
+            <p key={index} className="hobbies__text__paragraph__paragraph">
+              {paragraph}
             </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

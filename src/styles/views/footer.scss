@@ -19,7 +19,10 @@
 }
 
 .footer__link {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  border: 1px solid $color-white;
+  border-radius: 10rem;
+  padding: 1rem 2rem;
 }
 
 .footer__link__item {
@@ -33,23 +36,6 @@
   left: 0;
   @extend %flex-ac-jb;
   padding: 0 3rem;
-}
-
-.footer__mask {
-  position: absolute;
-  top: 20rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.footer__mask__media {
-  width: 20rem;
-  height: 20rem;
-  position: relative;
-}
-
-.footer__mask__media__image {
-  @extend %cover;
 }
 
 .footer__title {
