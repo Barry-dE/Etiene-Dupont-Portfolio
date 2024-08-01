@@ -2,28 +2,30 @@ import Home from "./views/Home";
 import Preloader from "./components/Preloader";
 import Navigation from "./components/Navigation";
 import About from "./views/About";
+import Hobbies from "./views/Hobbies";
 import Footer from "./views/Footer";
 import Awards from "./views/Awards";
-import Content from "./Layout/Content";
-import init from "./js";
+import Init from "./js";
 import { useEffect } from "react";
-// import smoothScroll from "./js/utils/smoothScroll";
+import Works from "./views/Works";
 
 function App() {
   useEffect(() => {
-    new init();
+    new Init();
   }, []);
 
   return (
     <>
       <Preloader />
       <Navigation />
-      <Content>
+      <main className="content">
         <Home />
         <About />
+        <Hobbies />
         <Awards />
+        <Works />
         <Footer />
-      </Content>
+      </main>
     </>
   );
 }

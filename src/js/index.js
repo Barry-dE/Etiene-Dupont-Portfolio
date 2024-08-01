@@ -1,6 +1,6 @@
 import Drag from "./animations/drag";
 
-export default class init {
+export default class Init {
   constructor() {
     this.createDrag();
   }

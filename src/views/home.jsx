@@ -9,16 +9,6 @@ export default function Home() {
   return (
     <section className="home">
       <div className="home__wrapper">
-        <div className="home__card">
-          <div className="home__card__image">
-            <div className="home__card__draggable">Photographer</div>
-            <div className="home__card__draggable">Creative</div>
-            <div className="home__card__draggable">Artist</div>
-            <div className="home__card__draggable">Art Director</div>
-            <div className="home__card__draggable">Writer</div>
-            <div className="home__card__draggable">Traveller</div>
-          </div>
-        </div>
         <div className="home__text">
           <div className="home__text__wrapper">
             <figure className="home__text__media">

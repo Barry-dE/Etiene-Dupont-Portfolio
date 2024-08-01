@@ -41,7 +41,7 @@ function Navigation() {
             href="
           "
           >
-            Works
+            Menu
           </a>
         </div>
       </div>

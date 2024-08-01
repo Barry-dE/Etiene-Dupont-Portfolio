@@ -1,0 +1,46 @@
+.works {
+  height: 100%; /* Full viewport height */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.works__wrapper {
+  position: absolute;
+  top: 0;
+  width: 400vw;
+  height: 100vh;
+  will-change: transform;
+}
+
+.works__text {
+  font-size: 40vw;
+  text-transform: uppercase;
+}
+
+.card {
+  position: absolute;
+  width: 50rem;
+  height: 40rem;
+
+  img {
+    @extend %cover;
+    object-fit: cover;
+  }
+
+  &--1 {
+    top: 50%;
+    left: 80%;
+  }
+
+  &--2 {
+    top: 25%;
+    left: 40%;
+  }
+
+  &--3 {
+    top: 10rem;
+    left: 40rem;
+  }
+}
