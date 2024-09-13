@@ -1,53 +1,52 @@
 .home {
-  @extend %dimension;
-  overflow: hidden;
-  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .home__wrapper {
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-.home__card {
-  @extend %cover;
-  color: $color-white;
-}
-
-.home__text {
-  @extend %cover;
-}
-.home__text__wrapper {
+.home__media {
+  width: 100%;
+  height: 100%;
   position: relative;
-  @extend %dimension;
 }
 
-.home__text__media {
-  width: 50rem;
-  height: 25rem;
-  position: absolute;
-  bottom: 4rem;
-  left: 24rem;
-}
-
-.home__text__media__image {
+.home__media__image {
   @extend %cover;
   object-fit: cover;
+  object-position: center;
+  filter: blur(0.5px) brightness(0.7);
 }
 
-.home__text__title__content {
+.hero__text__description {
+  font-size: 2.3rem;
+}
+
+.hero__text {
+  width: 75rem;
   position: absolute;
-  width: 100%;
-  height: 55rem;
-  bottom: 7rem;
-
-  & > :nth-child(2) {
-    position: absolute;
-    right: 9rem;
-  }
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 2.6rem;
+  bottom: 2rem;
+  z-index: 1;
 }
 
-.home__text__title {
-  position: relative;
-  font-size: 30rem;
-  white-space: wrap;
+.hero__services {
+  position: absolute;
+  height: 15rem;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 0;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 2;
+  font-size: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
